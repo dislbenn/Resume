@@ -10,37 +10,61 @@
     </head>
 
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            padding: 14px 16px;
-            text-align: center;
-            text-decoration: none;
-        }
-        
-        li a:active{
-            background-color: aquamarine
-        }
-
-        li a:hover:not(.active){
-            background-color: blueviolet
-        }
-
-        .active{
-            background-color:royalblue
-        }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: white;
+                padding: 14px 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                z-index: 1;
+            }
+    
+            li.active {
+                display: inline-block
+            }
+    
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+    
+            li a:active{
+                background-color: aquamarine;
+            }
+    
+            li a:hover:not(.active){
+                background-color: blueviolet;
+            }
+    
+            .active{
+                display: block;
+                background-color:royalblue;
+            }
+    
+            .active:hover .dropdown-content{
+                display: block;
+            }
     </style>
 
     <body style="background-color: black">
