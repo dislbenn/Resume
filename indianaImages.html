@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, ECSU, VIKING">
+        <meta name="description" content="A description of the page" />
+
+        <title>Indiana Images</title>
+    </head>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        li a:active{
+            background-color: aquamarine
+        }
+
+        li a:hover:not(.active){
+            background-color: blueviolet
+        }
+
+        .active{
+            background-color:royalblue
+        }
+
+    </style>
+
+    <body style="background-color: black">
+        <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li class="active"> 
+                    <a href="javascript:void(0)" class="dropbtn">IMAGES</a>
+                    <div class="dropdown-content">
+                        <a href="indianaImages.html">Indiana Internship</a>
+                        <a href="ibmImages.html">IBM Internship</a>
+                    </div>
+                </li>
+        </ul>
+
+        <h1 style="text-align: center; color: skyblue">
+            <img src="coming-soon.jpg">
+        </h1>
+        
+        <!--img class = "mySlides" src = "20171019_113657.jpg">
+        <img class = "mySlides" src = "20171019_113723.jpg">
+        <img class = "mySlides" src = "20171019_115006.jpg">
+        <img class = "mySlides" src = "20171019_115057.jpg">
+        <img class = "mySlides" src = "20171019_115935.jpg">
+        <img class = "mySlides" src = "20171019_120101.jpg">
+        <img class = "mySlides" src = "20171019_174845.jpg">
+        <img class = "mySlides" src = "20171019_174932.jpg">
+        <img class = "mySlides" src = "20171019_175016.jpg">
+        <img class = "mySlides" src = "20171019_194430.jpg">
+        <img class = "mySlides" src = "20171019_225825.jpg">
+        <img class = "mySlides" src = "20171020_144731.jpg">
+        <img class = "mySlides" src = "20171020_152618.jpg">
+        <img class = "mySlides" src = "20171020_152819.jpg">
+        <img class = "mySlides" src = "20171020_155116.jpg">
+        <img class = "mySlides" src = "20171020_155200.jpg">
+        
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        -->
+    </body>
+</html>

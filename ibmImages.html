@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML, ECSU, VIKING">
         <meta name="description" content="A description of the page" />
 
-        <title>contact</title>
+        <title>IBM Images</title>
     </head>
 
     <style>
@@ -41,10 +41,9 @@
         .active{
             background-color:royalblue
         }
-
     </style>
 
-    <body style="background-color: gray">
+    <body style="background-color: black">
             <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -58,23 +57,36 @@
                         </div>
                     </li>
             </ul>
-        <h1 style="text-align: center; color: skyblue">
-            Demo: Contact Page<br>
-        </h1>
-        
-        <p style="text-align: center; color:cornsilk">
-            Hello, my name is Disaiah Bennett. I am a senior at Elizabeth City State University<br>
-            Major: Computer Science, Minor Mathematics<br>
-        </p>
 
-        <p style="color: aquamarine">
-            First Name: <input type="text" name="fname" placeholder="First Name.." required><br>
-            Bennett Name: <input type="text" name="lname" placeholder="Last Name.." required><br>
-            Student Email: <input type="email" name="semail" placeholder="Email.." required><br>
-            Student ID: <input type="text" name="sid" placeholder="ID Number.." required><br>
-        </p>
+        <h1 style="text-align: center; color: skyblue">
+            Demo: Image Page<br>
+        </h1>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+    
+        <h1 style="text-align: center; color: skyblue">
+            <img src="coming-soon.jpg">
+        </h1>
+
         <form action="home.html" method="post">
             <button type="submit" value="submit">Submit</button>
         </form>
+
     </body>
 </html>
