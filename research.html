@@ -30,103 +30,123 @@
             text-decoration: none;
         }
         
-        li a:active{
-            background-color: aquamarine
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+        }
+
+        li.active {
+            display: inline-block
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
         }
 
         li a:hover:not(.active){
-            background-color: blueviolet
+            background-color: blueviolet;
         }
 
         .active{
-            background-color:royalblue
+            display: block;
+            background-color:royalblue;
         }
 
-    </style>
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
 
-    <body>
-            <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="research.html">RESEARCH</a></li>
-                    <li class="active"> 
-                        <a href="javascript:void(0)" class="dropbtn">IMAGES</a>
-                        <div class="dropdown-content">
-                            <a href="indianaImages.html">Indiana Internship</a>
-                            <a href="ibmImages.html">IBM Internship</a>
-                        </div>
-                    </li>
-            </ul>
+</style>
 
-        <h2>
-            ROP based code reuse attack on Intel SGX<br>
-            Mentor: Dr. Xiaofang Wang<br>
-            Indiana University, Bloomington<br>
-        </h2>
+<body style="background-color: white">
+    <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a class="active" href="research.html">RESEARCH</a></li>
+            <li class="dropdown"> 
+                <a href="images.html" class="dropbtn">IMAGES</a>
+                <div class="dropdown-content">
+                    <a href="indianaImages.html">Indiana Internship</a>
+                    <a href="ibmImages.html">IBM Internship</a>
+                </div>
+            </li>
+    </ul>
 
-        <p style="text-align: left; color: black;">
-            Abstract
-            Knowing the potential leakage inside SGX enclave caused by software<br>
-            vulnerabilities, new understandings are needed to mitigate the threat. From that<br>
-            which is known, two recent works are published on this topic. SGX-Shield at<br> 
-            NDSS'17 proposed load-time randomization, and "Hacking in Darkness: Return-<br>
-            oriented Programming against Secure Enclaves" to appear at Usenix Security'17.<br>
-            By following the research routine: a basic attack outside SGX to understand ROP,<br>
-            the ROP attack inside SGX enclave, and JIT-ROP to bypass SGX-Shield. After we<br>
-            can propose mitigation strategies, such as run-time live re-randomization. Both<br>
-            parts of JIT-ROP inside SGX and run-time live re-randomization are research<br>
-            problems we can try to solve.<br>
-            <br />
-            Keywords: 
-        </p>
+    <h2>
+        ROP based code reuse attack on Intel SGX<br>
+        Mentor: Dr. Xiaofang Wang<br>
+        Indiana University, Bloomington<br>
+    </h2>
+
+    <p style="text-align: left; color: black;">
+        Abstract
+        Knowing the potential leakage inside SGX enclave caused by software<br>
+        vulnerabilities, new understandings are needed to mitigate the threat. From that<br>
+        which is known, two recent works are published on this topic. SGX-Shield at<br> 
+        NDSS'17 proposed load-time randomization, and "Hacking in Darkness: Return-<br>
+        oriented Programming against Secure Enclaves" to appear at Usenix Security'17.<br>
+        By following the research routine: a basic attack outside SGX to understand ROP,<br>
+        the ROP attack inside SGX enclave, and JIT-ROP to bypass SGX-Shield. After we<br>
+        can propose mitigation strategies, such as run-time live re-randomization. Both<br>
+        parts of JIT-ROP inside SGX and run-time live re-randomization are research<br>
+        problems we can try to solve.<br>
+        <br />
+        Keywords: 
+    </p>
 
 
-        <h2>
-            Use of Python Scripts to Compare and Contrast Photo Images<br>
-            Mentor: Derek Morris<br>
-            Elizabeth City State University<br>
-        </h2>
+    <h2>
+        Use of Python Scripts to Compare and Contrast Photo Images<br>
+        Mentor: Derek Morris<br>
+        Elizabeth City State University<br>
+    </h2>
 
-        <p style="text-align: left; color: black">
-            Abstract
-            In python there is an ability to write python scripts for a variety of projects.<br>
-            For this project the python script was written to perform an image comparison.<br>
-            This was done with various libraries that are included in the python language.<br>
-            These libraries include Image, OpenCV, and etc. Thus, when importing these the<br>
-            program would ask the user for two images and the size for the images the program<br>
-            would display the pixel values for the images as well as display an image were<br>
-            if the pixels of the two images matched the image would be "black out" for that<br>
-            section. The team later found out that to compare the images the team needed to<br>
-            resize the two images as well as that to have the program run on different computer<br>
-            the necessary libraries needed to be on the new computer. Therefore, in the future <br>
-            the team decided that the program would need to be more robust and efficient.<br>
-            <br />
-            Keywords: Python, Image Comparison
-        </p>
+    <p style="text-align: left; color: black">
+        Abstract
+        In python there is an ability to write python scripts for a variety of projects.<br>
+        For this project the python script was written to perform an image comparison.<br>
+        This was done with various libraries that are included in the python language.<br>
+        These libraries include Image, OpenCV, and etc. Thus, when importing these the<br>
+        program would ask the user for two images and the size for the images the program<br>
+        would display the pixel values for the images as well as display an image were<br>
+        if the pixels of the two images matched the image would be "black out" for that<br>
+        section. The team later found out that to compare the images the team needed to<br>
+        resize the two images as well as that to have the program run on different computer<br>
+        the necessary libraries needed to be on the new computer. Therefore, in the future <br>
+        the team decided that the program would need to be more robust and efficient.<br>
+        <br />
+        Keywords: Python, Image Comparison
+    </p>
 
-        <h2>
-            Performance Improvement for Cloud Internet Services<br>
-            Manager: Nikhil Gupta<br>
-            Mentor: Andrei Tao<br>
-            IBM, Austin, Tx<br>
-        </h2>
+    <h2>
+        Performance Improvement for Cloud Internet Services<br>
+        Manager: Nikhil Gupta<br>
+        Mentor: Andrei Tao<br>
+        IBM, Austin, Tx<br>
+    </h2>
 
-        <p style="text-align: left; color: black">
-            Abstract
-            Knowing the potential leakage inside SGX enclave caused by software<br>
-            vulnerabilities, new understandings are needed to mitigate the threat. From that<br>
-            which is known, two recent works are published on this topic. SGX-Shield at<br> 
-            NDSS'17 proposed load-time randomization, and "Hacking in Darkness: Return-<br>
-            oriented Programming against Secure Enclaves" to appear at Usenix Security'17.<br>
-            By following the research routine: a basic attack outside SGX to understand ROP,<br>
-            the ROP attack inside SGX enclave, and JIT-ROP to bypass SGX-Shield. After we<br>
-            can propose mitigation strategies, such as run-time live re-randomization. Both<br>
-            parts of JIT-ROP inside SGX and run-time live re-randomization are research<br>
-            problems we can try to solve.<br>
-            <br />
-            Keywords: 
-        </p>
+    <p style="text-align: left; color: black">
+        Abstract
+        Knowing the potential leakage inside SGX enclave caused by software<br>
+        vulnerabilities, new understandings are needed to mitigate the threat. From that<br>
+        which is known, two recent works are published on this topic. SGX-Shield at<br> 
+        NDSS'17 proposed load-time randomization, and "Hacking in Darkness: Return-<br>
+        oriented Programming against Secure Enclaves" to appear at Usenix Security'17.<br>
+        By following the research routine: a basic attack outside SGX to understand ROP,<br>
+        the ROP attack inside SGX enclave, and JIT-ROP to bypass SGX-Shield. After we<br>
+        can propose mitigation strategies, such as run-time live re-randomization. Both<br>
+        parts of JIT-ROP inside SGX and run-time live re-randomization are research<br>
+        problems we can try to solve.<br>
+        <br />
+        Keywords: 
+    </p>
         
     </body>
 </html>

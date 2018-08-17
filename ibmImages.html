@@ -49,10 +49,6 @@
                 text-align: left;
             }
     
-            li a:active{
-                background-color: aquamarine;
-            }
-    
             li a:hover:not(.active){
                 background-color: blueviolet;
             }
@@ -62,47 +58,25 @@
                 background-color:royalblue;
             }
     
-            .active:hover .dropdown-content{
+            .dropdown:hover .dropdown-content{
                 display: block;
             }
     </style>
 
     <body style="background-color: black">
-            <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="research.html">RESEARCH</a></li>
-                    <li class="active"> 
-                        <a href="images.html" class="dropbtn">IMAGES</a>
-                        <div class="dropdown-content">
-                            <a href="indianaImages.html">Indiana Internship</a>
-                            <a href="ibmImages.html">IBM Internship</a>
-                        </div>
-                    </li>
-            </ul>
-
-        <h1 style="text-align: center; color: skyblue">
-            Demo: Image Page<br>
-        </h1>
-
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        </script>
-
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+            <li class="dropdown"> 
+                <a href="images.html" class="dropbtn">IMAGES</a>
+                <div class="dropdown-content">
+                    <a href="indianaImages.html">Indiana Internship</a>
+                    <a class="active" href="ibmImages.html">IBM Internship</a>
+                </div>
+            </li>
+        </ul>
     
         <h1 style="text-align: center; color: skyblue">
             <img src="coming-soon.jpg">

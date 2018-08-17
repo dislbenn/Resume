@@ -17,7 +17,7 @@
                 overflow: hidden;
                 background-color: #333;
             }
-    
+
             li {
                 float: left;
             }
@@ -37,7 +37,7 @@
                 z-index: 1;
             }
     
-            li.active {
+            li.dropdown {
                 display: inline-block
             }
     
@@ -49,10 +49,6 @@
                 text-align: left;
             }
     
-            li a:active{
-                background-color: aquamarine;
-            }
-    
             li a:hover:not(.active){
                 background-color: blueviolet;
             }
@@ -62,18 +58,19 @@
                 background-color:royalblue;
             }
     
-            .active:hover .dropdown-content{
+            .dropdown:hover .dropdown-content{
                 display: block;
             }
+
         </style>
 
     <body style="background-color: black">
             <ul>
-                    <li><a href="home.html">HOME</a></li>
+                    <li><a class="active" href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="research.html">RESEARCH</a></li>
-                    <li class="active"> 
+                    <li class="dropdown"> 
                         <a href="javascript:void(0)" class="dropbtn">IMAGES</a>
                         <div class="dropdown-content">
                             <a href="indianaImages.html">Indiana Internship</a>
