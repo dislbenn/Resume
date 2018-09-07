@@ -5,11 +5,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
-li {
-    float: left;
-}
-
+li {float: left;}
 li a {
     display: block;
     color: white;
@@ -17,18 +13,13 @@ li a {
     text-align: center;
     text-decoration: none;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     z-index: 1;
 }
-
-li.dropdown {
-    display: inline-block
-}
-
+li.dropdown {display: inline-block;}
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -36,42 +27,30 @@ li.dropdown {
     display: block;
     text-align: left;
 }
-
-li a:hover:not(.active){
-    background-color: blueviolet;
-}
-
+li a:hover:not(.active){background-color: blueviolet;}
 .active{
     display: block;
     background-color:royalblue;
 }
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-
+.dropdown:hover .dropdown-content{display: block;}
 .imageResize{
     align: center;
     display: inline-block;
     width: 3%;
 }
-
 .profileImage{
     width: 35%;
     align-self: auto;
     border-radius: 50%;
 }
-
 .mySlides {
     width :25%;
     overflow: auto;
 }
-
 #active {
     display: block;
     background-color:royalblue;
 }
-
 #dropActive{
     display: block;
     background-color:rgb(26, 67, 190);
