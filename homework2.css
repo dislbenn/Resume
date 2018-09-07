@@ -1,0 +1,32 @@
+#header1{
+    text-align: center;
+    color: white;
+}
+
+#header2{
+    color: greenyellow;
+}
+
+#header3{
+    color: cadetblue;    
+}
+
+#profileImage{
+    width: 20%;
+    border-radius: 50%;
+    align-self: center;
+}
+
+body {
+    background-color: black;
+}
+
+table {
+    align-self: center;
+    color: white;
+}
+
+figcaption {
+    align-self: center;
+    color: white;
+}
